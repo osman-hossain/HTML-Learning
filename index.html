@@ -1,43 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <mega charset="utf-8"></mega>
-        <title>Accessible Table</title>
+        <meta charset="UTF-8">
+        <title>Form</title>
     </head>
     <body>
-        <caption>
-            Student Information
-        </caption>
-        <header>
-            <h1>HTML Table</h1>
-        </header>
-        <main>
-            <table>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Name</th>
-                        <th>GPA</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>18102041</td>
-                        <td>Ali Banat</td>
-                        <td>4.92</td>
-                    </tr>
-                    <tr>
-                        <td>18102042</td>
-                        <td>Hamza Ali</td>
-                        <td>4.64</td>
-                    </tr>
-                    <tr>
-                        <td>18102043</td>
-                        <td>abu ubaida</td>
-                        <td>3.99</td>
-                    </tr>
-                </tbody>
-            </table>
-        </main>
+        <h2>Registration form</h2>
+        <form action="https://formspree.io/f/meqyvwlv" method="post">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" name="fullname" id="fullname">
+            </div> </br>
+
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email">
+            </div> </br>
+
+            <div>
+                <label for="message">Your Message</label></br>
+                <textarea cols="30" rows="6" name="message" id="message"></textarea>
+            </div>
+            <button type="submit">submit</button>
+        </form>
     </body>
 </html>
